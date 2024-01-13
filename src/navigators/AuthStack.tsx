@@ -5,6 +5,7 @@ import {
     HomeScreen,
     LoginScreen,
     ProfileScreen,
+    QuicklyLoginScreen,
     RegisterScreen,
     SplashScreen,
 } from '../screens';
@@ -21,6 +22,10 @@ export default function AuthStack() {
             <Stack.Screen
                 name={navigationStrings.SPLASH}
                 component={SplashScreen}
+            />
+            <Stack.Screen
+                name={navigationStrings.QUICKLY_LOGIN}
+                component={QuicklyLoginScreen}
             />
             <Stack.Screen
                 name={navigationStrings.LOGIN}

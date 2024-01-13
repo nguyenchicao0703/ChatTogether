@@ -1,6 +1,6 @@
 import React, { ReactNode, createContext, useState } from 'react';
 
-export const Context = createContext();
+export const Context = createContext<any>(null);
 
 export const ContextProvider = ({ children }: { children: ReactNode }) => {
     const [isLogin, setIsLogin] = useState(false);

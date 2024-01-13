@@ -6,6 +6,8 @@ interface Color {
     BRIGHT_RED: string;
     LIGHT_BLUE: string;
     LIGHT_WHITE: string;
+    WHITE_OPACITY_19: string;
+    WHITE_OPACITY_37: string;
 }
 
 export const COLORS: Color = {
@@ -16,6 +18,8 @@ export const COLORS: Color = {
     BRIGHT_RED: '#FF2D1B',
     LIGHT_BLUE: '#F2F7FB',
     LIGHT_WHITE: '#F3F6F6',
+    WHITE_OPACITY_19: 'rgba(255, 255, 255, 0.19)',
+    WHITE_OPACITY_37: 'rgba(255, 255, 255, 0.37)',
 };
 
 interface Font {
@@ -47,6 +51,9 @@ interface Image {
     splash_main: any;
     trash: any;
     user: any;
+    facebook: any;
+    google: any;
+    instagram: any;
 }
 
 export const getImageRequire: Image = {
@@ -60,10 +67,14 @@ export const getImageRequire: Image = {
     splash_main: require('../assets/images/splash_main.png'),
     trash: require('../assets/images/trash.png'),
     user: require('../assets/images/user.png'),
+    facebook: require('../assets/images/facebook.png'),
+    google: require('../assets/images/google.png'),
+    instagram: require('../assets/images/instagram.png'),
 };
 
 interface Navigation {
     SPLASH: string;
+    QUICKLY_LOGIN: string;
     LOGIN: string;
     REGISTER: string;
     AUTHENTICATION: string;
@@ -75,6 +86,7 @@ interface Navigation {
 
 export const navigationStrings: Navigation = {
     SPLASH: 'Splash',
+    QUICKLY_LOGIN: 'QuicklyLogin',
     LOGIN: 'Login',
     REGISTER: 'Register',
     AUTHENTICATION: 'Authentication',

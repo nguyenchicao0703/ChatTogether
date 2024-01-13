@@ -31,7 +31,7 @@ const SplashScreen = ({ navigation }: any) => {
         }).start();
 
         setTimeout(() => {
-            navigation.replace(navigationStrings.LOGIN);
+            navigation.replace(navigationStrings.QUICKLY_LOGIN);
         }, 3000);
     }, []);
 
